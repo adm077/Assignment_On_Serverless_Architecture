@@ -211,7 +211,7 @@ def lambda_handler(event, context):
   s3 = boto3.client('s3')
 
   # Get the name of the S3 bucket.
-  bucket_name = 'YOUR_S3_BUCKET_NAME'
+  bucket_name = 'ISRAR_S3_BUCKET_NAME'
 
   # List all the objects in the S3 bucket.
   objects = s3.list_objects(Bucket=bucket_name)['Contents']
